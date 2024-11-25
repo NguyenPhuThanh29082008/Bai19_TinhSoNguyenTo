@@ -24,6 +24,12 @@ bool(kiemtraSNT(int s)) {
 }
 
 
+bool kiemtraSCP(int x) {
+	if (sqrt(x) == (int)sqrt(x)) return true;	
+	return false;
+}
+
+
 int main()
 {
 	cout << "Kiem tra so co phai la so nguyen to hay khong\n";
@@ -35,6 +41,13 @@ int main()
 		if (kiemtraSNT(m) == true) cout << m << " ";
 	}
 
+	cout << endl;
+
+
+	for (int i = 1; i < 100; i++)
+	{
+		if (kiemtraSCP(i) == true) cout << i << " ";
+	}
 
 
 	/*
