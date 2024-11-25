@@ -29,14 +29,13 @@ int main()
 	cout << "Kiem tra so co phai la so nguyen to hay khong\n";
 	int so;
 	cout << "Nhap so: "; cin >> so;
-	int dem = 0;
-
 
 	for (int m = 1; m <= so; m++)
 	{
 		if (kiemtraSNT(m) == true) cout << m << " ";
-
 	}
+
+
 
 	/*
 	for (int i = 1; i <= so; i++)
