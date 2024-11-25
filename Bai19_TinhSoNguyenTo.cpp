@@ -3,6 +3,27 @@
 
 #include <iostream>
 using namespace std;
+
+
+bool(kiemtraSNT(int s)) {
+	int dem = 0;
+	for (int i = 1; i <= s; i++)
+	{
+		if (s % i == 0)
+		{
+			dem++;
+		}
+	}
+	if (dem == 2)
+	{
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+
 int main()
 {
 	cout << "Kiem tra so co phai la so nguyen to hay khong\n";
@@ -13,18 +34,7 @@ int main()
 
 	for (int m = 1; m <= so; m++)
 	{
-		dem = 0;
-		for (int i = 1; i <= so; i++)
-		{
-			if (m % i == 0)
-			{
-				dem++;
-			}
-		}
-		if (dem == 2)
-		{
-			cout << m << " ";
-		}
+		if (kiemtraSNT(m) == true) cout << m << " ";
 
 	}
 
